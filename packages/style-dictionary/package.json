@@ -1,14 +1,18 @@
 {
   "name": "@monorepo_template/style-dictionary",
   "version": "1.0.0",
-  "main": "build.js",
+  "license": "MIT",
   "private": true,
+  "author": "Rafael Rozon",
+  "main": "build.js",
   "scripts": {
     "build": "node_modules/.bin/style-dictionary build",
-    "clean": "rm -rf build"
+    "clean": "rimraf node_modules yarn-error.log build",
+    "lint": "eslint ./",
+    "lint-fix": "eslint --fix ./",
+    "pre-commit": "lint-staged",
+    "test": "jest --config=config/jest.config.js"
   },
-  "author": "Rafael Rozon",
-  "license": "MIT",
   "devDependencies": {
     "style-dictionary": "2.8.3"
   }

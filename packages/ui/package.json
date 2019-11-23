@@ -12,9 +12,9 @@
     "clean": "rimraf node_modules yarn-error.log",
     "lint": "eslint ./",
     "lint-fix": "eslint --fix ./",
+    "pre-commit": "lint-staged",
     "storybook": "start-storybook -p 6006",
-    "test": "jest --config=config/jest.config.js",
-    "pre-commit": "lint-staged"
+    "test": "jest --config=config/jest.config.js"
   },
   "dependencies": {
     "@monorepo_template/tools": "1.0.0",

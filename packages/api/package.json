@@ -2,5 +2,12 @@
   "name": "@monorepo_template/api",
   "version": "1.0.0",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "clean": "rimraf node_modules yarn-error.log",
+    "lint": "eslint ./",
+    "lint-fix": "eslint --fix ./",
+    "pre-commit": "lint-staged",
+    "test": "jest --config=config/jest.config.js"
+  }
 }
