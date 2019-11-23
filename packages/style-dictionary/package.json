@@ -1,0 +1,15 @@
+{
+  "name": "@monorepo_template/style-dictionary",
+  "version": "1.0.0",
+  "main": "build.js",
+  "private": true,
+  "scripts": {
+    "build": "node_modules/.bin/style-dictionary build",
+    "clean": "rm -rf build"
+  },
+  "author": "Rafael Rozon",
+  "license": "MIT",
+  "devDependencies": {
+    "style-dictionary": "2.8.3"
+  }
+}

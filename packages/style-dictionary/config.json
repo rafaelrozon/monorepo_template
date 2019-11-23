@@ -1,0 +1,23 @@
+{
+    "source": ["properties/**/*.json"],
+    "platforms": {
+        "js": {
+            "transformGroup": "js",
+            "files": [
+                {
+                    "format": "javascript/module",
+                    "destination": "variables.js"
+                }
+            ]
+        },
+        "css": {
+            "transformGroup": "css",
+            "files": [
+                {
+                    "format": "css/variables",
+                    "destination": "variables.css"
+                }
+            ]
+        }
+    }
+}
