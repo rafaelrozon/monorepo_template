@@ -1,0 +1,42 @@
+{
+  "name": "@monorepo_template/ui",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "Rafael Rozon",
+  "files": [
+    "./src"
+  ],
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "clean": "rimraf node_modules yarn-error.log",
+    "lint": "eslint ./",
+    "lint-fix": "eslint --fix ./",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest --config=config/jest.config.js"
+  },
+  "dependencies": {
+    "@monorepo_template/tools": "1.0.0",
+    "ramda": "^0.26.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-knobs": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addon-viewport": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@types/ramda": "^0.26.36",
+    "@types/styled-components": "^4.4.0",
+    "@types/styled-system": "^5.1.4",
+    "babel-loader": "^8.0.6",
+    "better-npm-run": "^0.1.1",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.7.2"
+  }
+}
