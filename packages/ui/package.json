@@ -13,7 +13,8 @@
     "lint": "eslint ./",
     "lint-fix": "eslint --fix ./",
     "storybook": "start-storybook -p 6006",
-    "test": "jest --config=config/jest.config.js"
+    "test": "jest --config=config/jest.config.js",
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "@monorepo_template/tools": "1.0.0",
