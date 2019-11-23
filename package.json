@@ -41,7 +41,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn workspaces pre-commit"
+      "pre-commit": "yarn workspaces run pre-commit"
     }
   }
 }
