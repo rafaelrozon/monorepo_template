@@ -15,8 +15,8 @@
     "clean": "yarn workspaces run clean && yarn run clean:root",
     "clean:root": "rm -rf node_modules",
     "format:pkg": "format-package -w",
-    "lint": "yarn workspaces run lint",
-    "lint-fix": "yarn workspaces run lint-fix",
+    "lint": "yarn workspace @monorepo_template/ui lint",
+    "lint-fix": "yarn workspace @monorepo_template/ui lint-fix",
     "postinstall": "npm run format:pkg",
     "storybook:ui": "yarn workspace @monorepo_template/ui storybook",
     "test": "yarn workspaces run test"
@@ -42,6 +42,7 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "format-package": "5.2.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.2"
   }
 }
