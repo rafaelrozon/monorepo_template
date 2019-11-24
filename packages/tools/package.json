@@ -2,12 +2,14 @@
   "name": "@monorepo_template/tools",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "clean": "rimraf node_modules yarn-error.log",
-    "lint": "eslint ./",
-    "lint-fix": "eslint --fix ./",
-    "pre-commit": "lint-staged",
-    "test": "jest --config=config/jest.config.js"
+    "lint": "echo 'skipping...'",
+    "lint-fix": "echo 'skipping...'",
+    "pre-commit": "echo 'skipping...'",
+    "prettier": "echo 'skipping...'",
+    "test": "echo 'skipping...'"
   }
 }

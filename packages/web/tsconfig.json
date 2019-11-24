@@ -1,0 +1,24 @@
+{
+    "extends": "../tools/src/tsconfig.json",
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "jsx": "react",
+      "lib": ["es5", "es6", "es7", "es2017", "dom"],
+      "module": "esnext",
+      "sourceMap": true,
+      "allowJs": false,
+      "moduleResolution": "node",
+      "noEmit": true,
+      "target": "esnext",
+      "baseUrl": ".",
+      "strict": false,
+      "typeRoots": [
+          "../../node_modules/@types",
+          "./node_modules/@types"
+      ]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exportDefaultFrom": true
+  }

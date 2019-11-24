@@ -13,17 +13,17 @@
   },
   "scripts": {
     "clean": "yarn workspaces run clean && yarn run clean:root",
-    "clean:root": "rm -rf node_modules",
+    "clean:root": "rimraf node_modules",
     "format:pkg": "format-package -w",
-    "lint": "yarn workspace @monorepo_template/ui lint",
-    "lint-fix": "yarn workspace @monorepo_template/ui lint-fix",
+    "lint": "yarn workspaces run lint",
+    "lint-fix": "yarn workspaces run lint-fix",
     "postinstall": "npm run format:pkg",
-    "storybook:ui": "yarn workspace @monorepo_template/ui storybook",
+    "storybook:ui": "yarn workspaces run storybook",
     "test": "yarn workspaces run test"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn workspace @monorepo_template/ui pre-commit"
+      "pre-commit": "yarn workspaces pre-commit"
     }
   },
   "devDependencies": {
@@ -42,9 +42,8 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "format-package": "5.2.0",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.4.3",
     "prettier": "^1.19.1",
+    "rimraf": "3.0.0",
     "typescript": "^3.7.2"
   }
 }

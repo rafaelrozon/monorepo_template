@@ -6,12 +6,12 @@
   "author": "Rafael Rozon",
   "main": "build.js",
   "scripts": {
-    "build": "node_modules/.bin/style-dictionary build",
-    "clean": "rimraf node_modules yarn-error.log build",
-    "lint": "eslint ./",
-    "lint-fix": "eslint --fix ./",
-    "pre-commit": "lint-staged",
-    "test": "jest --config=config/jest.config.js"
+    "clean": "rimraf node_modules yarn-error.log",
+    "lint": "echo 'skipping...'",
+    "lint-fix": "echo 'skipping...'",
+    "pre-commit": "echo 'skipping...'",
+    "prettier": "echo 'skipping...'",
+    "test": "echo 'skipping...'"
   },
   "devDependencies": {
     "style-dictionary": "2.8.3"
