@@ -1,4 +1,5 @@
 linters:
   packages/ui/*.ts:
-    - eslint --fix
+    - yarn lint-fix
+    - yarn prettier
     - git add
