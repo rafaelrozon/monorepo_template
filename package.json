@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'precommit!!!'"
+      "pre-commit": "yarn workspace @monorepo_template/ui pre-commit"
     }
   },
   "devDependencies": {
@@ -43,6 +43,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "format-package": "5.2.0",
     "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
     "prettier": "^1.19.1",
     "typescript": "^3.7.2"
   }
