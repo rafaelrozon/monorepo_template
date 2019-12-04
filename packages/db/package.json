@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf node_modules yarn-error.log",
-    "lint": "find -E ./src -regex \".*\\.(ts|tsx|js|jsx)\" | xargs eslint",
-    "lint-fix": "find -E ./src -regex \".*\\.(ts|tsx|js|jsx)\"  | xargs eslint --fix",
+    "lint": "task lint",
+    "lint-fix": "task lint-fix",
     "pre-commit": "yarn lint-fix && yarn prettier",
-    "prettier": "prettier --write ./src/**/*.ts",
+    "prettier": "task prettier",
     "test": "jest --config=config/jest.config.js"
   },
   "dependencies": {

@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "clean": "rimraf node_modules yarn-error.log",
-    "lint": "eslint --ext .ts --ext .js ./src/**",
-    "lint-fix": "eslint --fix --ext .ts --ext .js ./src/**",
+    "lint": "taks lint",
+    "lint-fix": "task lint-fix",
     "pre-commit": "yarn lint-fix && yarn prettier",
-    "prettier": "prettier --write ./src/**/*.ts",
+    "prettier": "task prettier",
     "test": "jest --config=config/jest.config.js"
   },
   "dependencies": {

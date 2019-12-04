@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
+  "bin": {
+    "task": "./src/scripts/task.sh"
+  },
   "main": "index.js",
   "scripts": {
     "clean": "rimraf node_modules yarn-error.log",

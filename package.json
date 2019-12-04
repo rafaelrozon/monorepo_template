@@ -51,6 +51,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "format-package": "5.2.0",
     "husky": "^4.0.0-beta.5",
+    "monorepo-run": "^0.4.2",
     "prettier": "^1.19.1",
     "rimraf": "3.0.0",
     "typescript": "^3.7.2"
