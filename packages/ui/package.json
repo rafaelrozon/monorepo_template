@@ -10,8 +10,8 @@
   "scripts": {
     "build-storybook": "build-storybook",
     "clean": "rimraf node_modules yarn-error.log",
-    "lint": "eslint ./src/**/*.ts",
-    "lint-fix": "eslint ./src/**/*.ts --fix",
+    "lint": "find -E ./src -regex \".*\\.(ts|tsx|js|jsx)\" | xargs eslint",
+    "lint-fix": "find -E ./src -regex \".*\\.(ts|tsx|js|jsx)\"  | xargs eslint --fix",
     "pre-commit": "yarn lint-fix && yarn prettier",
     "prettier": "prettier --write ./src/**/*.ts",
     "storybook": "start-storybook -p 6006",

@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf node_modules yarn-error.log",
     "lint": "eslint --ext .ts --ext .js ./src/**",
-    "lint-fix": "eslint --fix ./src/**/*.ts ./src/**/*.js",
+    "lint-fix": "eslint --fix --ext .ts --ext .js ./src/**",
     "pre-commit": "yarn lint-fix && yarn prettier",
     "prettier": "prettier --write ./src/**/*.ts",
     "test": "jest --config=config/jest.config.js"
