@@ -13,5 +13,6 @@
   },
   "dependencies": {
     "@monorepo_template/tools": "1.0.0"
+
   }
 }
