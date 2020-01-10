@@ -9,11 +9,7 @@ output() { echo "Running $1 for $(pwd)"; }
 case $CMD in
   test)
     output "test"
-    if [ -d "./test" ]; then
-      exe "../../node_modules/.bin/jest -c $(pwd)/jest.config.js --rootDir ."
-    else
-      echo "No tests to run"
-    fi
+    $PROJECT_BIN/jest -c $(pwd)/config/jest.config.js
     ;;
   prettier)
     output "prettier"
