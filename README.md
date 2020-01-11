@@ -37,5 +37,5 @@ Features:
 
 ### TODO
 
-- [] Make sure that projects can import code from core
-- [] Add examples
+- [ ] Make sure that projects can import code from core
+- [ ] Add examples
