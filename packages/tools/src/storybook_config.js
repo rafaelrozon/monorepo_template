@@ -7,5 +7,6 @@ const getConfig = (configure, folder = '../src') => {
     }
 
     configure(loadStories, module);
-
 }
+
+export default getConfig;

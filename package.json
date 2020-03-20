@@ -24,7 +24,7 @@
     "lint": "yarn workspaces run lint",
     "lint-fix": "yarn workspaces run lint-fix",
     "postinstall": "npm run format:pkg",
-    "storybook:ui": "yarn workspaces run storybook",
+    "storybook": "yarn workspaces run storybook",
     "test": "yarn workspaces run test"
   },
   "husky": {
